@@ -8,14 +8,29 @@
 /* General css ----------------------*/
 
 .top-line{
- display:grid;
- grid-template-columns: repeat(12) 1fr;
- grid-row: 1fr;
- background-color:#51979c;
- height: 30px;
-
-
+  display: grid;
+  grid-template: auto / repeat(48, 1fr);
+  background-color:#51979c;
+  height: 30px;
 }
+
+.linkedin{
+ 
+  color:#fff;
+  padding-left: 120px;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-size: 20px;
+ }
+
+ .pictos{
+ 
+  color:#fff;
+  padding-left: 5px;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-size: 20px;
+ }
 
 
 
