@@ -5,13 +5,14 @@
 
 
 
-/* General css ----------------------*/
+/* Top-line ----------------------*/
 
 .top-line{
   display: grid;
   grid-template: auto / repeat(48, 1fr);
   background-color:#51979c;
   height: 30px;
+  margin-bottom: 20px;
 }
 
 .linkedin{
@@ -24,7 +25,6 @@
  }
 
  .pictos{
- 
   color:#fff;
   padding-left: 5px;
   vertical-align: middle;
@@ -32,7 +32,69 @@
   font-size: 20px;
  }
 
+ .phone{
+  font-family: 'Muli', sans-serif;
+  color:rgb(64, 226, 24);
+  padding-left: 20px;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-size: 20px;
+ }
 
+/* Header ----------------------*/
+.header {
+  background-image:linear-gradient(rgba(81, 151, 156, 0.1),
+                                   rgba(81, 151, 156, 0.3)
+                                                       ),
+                                   url(/images/header-bg.webp);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;    
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "muli", "arial", "sans-serif";
+    font-weight: 400;
+    transition: background-color 1s, color 1s, border 1s; 
+
+}
+
+.btn-full{
+    background-color: azure;
+    color:#ed7c7c;
+    margin-right: 15px;
+}
+
+.btn-ghost{
+    border:1px solid #eee;
+    color:#ed7c7c; 
+}
+
+.btn-full:hover{
+    background-color: #ed7c7c;
+    color:#fff;
+}
+
+.btn-ghost:hover{
+    color:#fff;
+    border:1px solid #ed7c7c;
+}
+
+
+.banner{
+display: block;
+position:absolute;
+left:80px;
+
+}
+
+
+/* General css ----------------------*/
 
 
 body {
@@ -42,7 +104,7 @@ body {
     box-sizing: border-box;
   }
   a {
-    color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
   }
 
 
@@ -53,18 +115,17 @@ body {
       width: 100%;
       text-transform: uppercase;
       font-size: 12px;
+      
   }
   .menu-container {
+    height: 70px;
     margin: 0 auto;
-    border-bottom: 1px solid rgb(139, 138, 138);
-    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.20);
-    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.20);
-    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.20);
   }
   .menu a.logo {
       display: inline-block;
-      padding: 5px 1px;
-      width: 5%;
+      padding: 5px 5px;
+      width: 70px;
+      height: auto;
       float: left;
   }
   .menu img {
@@ -77,7 +138,7 @@ body {
   .menu-mobile:after {
     content: "\f394";
     font-family: "Ionicons";
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 0;
     float: right;
     position: relative;
@@ -120,7 +181,7 @@ body {
   }
   .menu > ul > li a {
     text-decoration: none;
-    padding: 4em 3em;
+    padding: 2em 3em;
     display: block;
   }
   .menu > ul > li:hover {
@@ -168,6 +229,7 @@ body {
   }
   .menu > ul > li > ul > li a:hover{
       color:#51979c;
+      font-weight: 800;
   }
   .menu > ul > li > ul > li > ul {
     display: block;
